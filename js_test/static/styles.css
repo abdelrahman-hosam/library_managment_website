@@ -1,0 +1,82 @@
+body{
+    background-image: url('./images/landingPage.jpg');
+    padding: 0;
+    margin: 0;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(91, 62, 49);
+    justify-content: space-between;
+}
+header h1{
+    color: #bca89f;
+    padding: 10px;
+    text-transform: capitalize;
+}
+header div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+header div a{
+    text-decoration: none;
+    color: #a08679;
+}
+header div a:hover{
+    color: black;
+}
+.card{
+    display: flex;
+    width: 40%;
+    margin: auto;
+    background-color: rgb(91, 62, 49, 0.91);
+    flex-direction: column;
+    margin-top: 200px;
+    text-align: center;
+    box-shadow: 5px 5px 5px 5px black 0.2;
+    border-radius: 10px;
+    max-width: 400px;
+    padding: 10px;
+}
+.card h2{
+    text-transform: capitalize;
+    color: #a08679;
+    font-size: 30px;
+}
+.card .info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.card .info input{
+    width: 200px;
+    align-items: center;
+    background-color:transparent;
+    border: none;
+    outline: none;
+    border: 1.5px solid #3d251e;
+    border-radius: 5px;
+    padding: 2px;
+}
+.card .info input:focus{
+    border: 2px solid black;
+}
+.card .info button{
+    background-color: #3d251e;
+    color: #a08679;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 300;
+    font-size: 12px;
+    padding: 5px;
+}
+.card p a{
+    text-decoration: none;
+    color: black;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./hompageStyle.css">
+    <title>library management</title>
+</head>
+<body>
+    <header>
+        <h1>library management</h1>
+    </header>
+    <div class="card">
+        <div class="main-opts">
+            <button id="books" onclick="bookOpts()">books</button>
+            <button id="authors" onclick="authorOpts()">authors</button>
+        </div>
+        <div class="sub-opts" id="sub-opts">
+
+        </div>
+        <div class="add" id="add-card">
+            <input id="book-title" placeholder="insert book title">
+            <input id="generes" placeholder="insert book generes">
+            <input id="authors-wrote" placeholder="insert book authors">
+            <input type="date" id="published-at">
+            <input id="description" placeholder="insert book description">
+            <br>
+            <button id="add-btn" onclick="add()">add book</button> 
+            <p>in generes and authores put a space between the authors or the generes</p>
+        </div>
+        <div class="search" id="search-card">
+            <input id="search-query" placeholder="insert the book title you want to search for">
+            <button id="submite-search" onclick="searchFor()">search</button>
+            <div id="book-search-result">
+                
+            </div>
+        </div>
+        <div class="show-books" id="show-card">
+            <div id="books-results"></div>
+        </div>
+        <div class="borrow-book" id="borrow-card">
+            <input id="book-id" placeholder="insert the id of the book you want to borrow">
+            <button onclick="borrow()">borrow</button>
+        </div>
+        <div id="author-add-card">
+            <input id="author-username" placeholder="insert you author username">
+            <input id="bio" placeholder="insert your bio (optional)">
+            <br>
+            <button id="add-author-btn" onclick="addAuthor()">submit</button>
+        </div>
+        <div id="author-search-card">
+            <input id="author-search-username" placeholder="insert author username">
+            <input id="author-search-id" placeholder="insert author id">
+            <br>
+            <button id="author-search-submit" onclick="searchAuthor()">submit</button>
+            <div id="author-search-results">
+                
+            </div>
+        </div>
+        <div id="author-wrote-card">
+            <input id="author-wrote-id" placeholder="insert the id of the author">
+            <button onclick="booksWrote()">search</button>
+        </div>
+    <script src="./booksPage.js"></script>
+</body>
+</html>
