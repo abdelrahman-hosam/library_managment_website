@@ -1,12 +1,7 @@
 const http = require('http')
 const mysql2 = require('mysql2')
 const database = mysql2.createConnection(
-    {
-        host: 'localhost',
-        user: 'root',  
-        password: 'bobo232324',
-        database: 'library_api',
-    }
+
 )
 const get_all_books = async (req , res) => {
     const [books] = await database.promise().query('SELECT * FROM book')
